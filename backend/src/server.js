@@ -14,7 +14,7 @@ const DATABASE=ENV.DATABASE_URL
 app.use(express.json())
 
 
-app.use("/api/favorites/",favoriteRoute)
+app.use("/api/favorites",favoriteRoute)
 app.get("/api/healthy",(req,res)=>{
     res.status(200).json({success:true})
 })
