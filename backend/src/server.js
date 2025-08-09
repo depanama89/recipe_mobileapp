@@ -23,4 +23,6 @@ app.get("/api/healthy",(req,res)=>{
 //     console.log(`Serveur is runnig on PORT:${PORT}`)
 // })
 
+console.log("App démarrée !");
+
 export default app
