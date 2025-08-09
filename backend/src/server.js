@@ -19,10 +19,10 @@ app.get("/api/healthy",(req,res)=>{
     res.status(200).json({success:true})
 })
 
-app.listen(PORT,()=>{
-    console.log(`Serveur is runnig on PORT:${PORT}`)
-})
+// app.listen(PORT,()=>{
+//     console.log(`Serveur is runnig on PORT:${PORT}`)
+// })
 
 // console.log("App démarrée !");
 
-// export default app
+export default app
