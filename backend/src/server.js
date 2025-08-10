@@ -19,7 +19,9 @@ app.use(express.json())
 
 app.use("/api/favorites",favoriteRoute)
 app.get("/api/healthy",(req,res)=>{
-    res.status(200).json({success:true})
+    res.status(200).json({success:true,
+        message:"deployement avec success"
+    })
 })
 
 app.listen(PORT,()=>{
