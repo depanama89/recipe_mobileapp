@@ -8,11 +8,11 @@ import job from "./config/cron.js"
 
 const app=express()
 
-const PORT=ENV.PORT || 5001
+const PORT=ENV.PORT 
 const DATABASE=ENV.DATABASE_URL
 
 // appel de job on aura besoin de ça que en production
-if(ENV.NODE_ENV==="production") job.start()
+// if(ENV.NODE_ENV==="production") job.start()
 
 app.use(express.json())
 
